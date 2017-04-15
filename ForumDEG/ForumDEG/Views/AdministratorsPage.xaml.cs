@@ -33,6 +33,9 @@ namespace ForumDEG.Views
         {
             base.OnAppearing();
 
+			RestService rest = new RestService();
+			await rest.RefreshDataAsync();
+
             AdministratorListView.ItemsSource = await App.AdministratorDatabase.GetAllAdministrators();
         }
 

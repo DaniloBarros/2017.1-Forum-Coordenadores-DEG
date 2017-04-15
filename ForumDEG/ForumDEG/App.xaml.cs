@@ -10,7 +10,7 @@ namespace ForumDEG {
         //static ForumDatabase _forumDatabase;
 
         public App() {
-            InitializeComponent();
+			InitializeComponent();
 
             MainPage = new NavigationPage(new AdministratorsPage());
             //MainPage = new ForumDEG.MainPage();
